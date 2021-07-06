@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Use Parameters') {
             steps   {
-                sh 'python3 sample.py ${params.FIRST_NAME} ${params.LAST_NAME} ${params.CITIES} ${params.ABOUT_ME} ${params.VACCINATED}'
+//                 sh 'python3 sample.py ${params.FIRST_NAME} ${params.LAST_NAME} ${params.CITIES} ${params.ABOUT_ME} ${params.VACCINATED}'
                 print "FIRST_NAME value is ${params.FIRST_NAME}"
                 print "LAST_NAME value is ${params.LAST_NAME}"
                 print "CITIES value is ${params.CITIES}"
